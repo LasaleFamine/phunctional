@@ -39,8 +39,6 @@ console.log(res);
 
 `Object -> Any -> String`
 
-##### return *case* | defaultCase
-
 <details><summary><b>expand</b></summary><p>
 
 - `Object`: object of `cases` to analyze
@@ -48,6 +46,8 @@ console.log(res);
 - `String`: `key` to check
 
 </p></details>
+
+##### return *case* | defaultCase
 
 Simple `switch` but composable with object literals. It could also run a function.
 
@@ -57,13 +57,13 @@ Simple `switch` but composable with object literals. It could also run a functio
 
 `Function -> Array`
 
-##### return [T] | []
-
 <details><summary><b>expand</b></summary><p>
 
 - `Function`: function to handle the `map`
 - `Array`: array of items
 
 </p></details>
+
+##### return [T] | []
 
 Classic `map` on array but without side effects. Return an empy array if the array passed is not valid.
