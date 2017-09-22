@@ -1,0 +1,58 @@
+{
+	"name": "phunctional",
+	"version": "0.0.0",
+	"description": "&#34;Almost&#34; functional programming utils methods",
+	"license": "MIT",
+	"repository": "LasaleFamine/phunctional",
+	"main": "src",
+	"bugs": {
+    "url": "https://github.com/LasaleFamine/phunctional/issues",
+    "email": "info@godev.space"
+	},
+	"homepage": "https://github.com/LasaleFamine/phunctional",
+	"author": {
+		"name": "LasaleFamine",
+		"email": "info@godev.space",
+		"url": "godev.space"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"release": "git pull && standard-version",
+		"test": "xo && nyc ava",
+		"test:travis": "yarn test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
+	},
+	"files": [
+		"src"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "0.20.0",
+		"codecov": "2.2.0",
+		"nyc": "11.0.0",
+		"xo": "0.18.2",
+		"standard-version": "4.2.0"
+	},
+	"xo": {
+		"rules": {
+			"max-len": [
+        "error",
+        {
+          "code": 80,
+          "ignoreUrls": true
+        }
+			],
+			"capitalized-comments": "off"
+		}
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
+}
