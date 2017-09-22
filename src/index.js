@@ -1,7 +1,7 @@
 'use strict';
 
-const switchcase = require('./switchcase');
+const switchcase = require('./lib/switchcase');
 
-export default {
+module.exports = {
 	switchcase
 };

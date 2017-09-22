@@ -6,5 +6,5 @@ const _executeFunction = f =>
 const _switch = cases => defaultCase => key =>
 	key in cases[key] ? cases[key] : defaultCase;
 
-export default cases => defaultCase => key =>
+module.exports = cases => defaultCase => key =>
 	_executeFunction(_switch(cases)(defaultCase)(key));
