@@ -2,8 +2,8 @@ import test from 'ava';
 import map from './../../src/lib/map';
 
 const testArr = ['some', 'something', 'nice', 'good'];
-const fnCase1 = item => item.inclues('some');
-const resCase1 = ['some', 'something'];
+const fnCase1 = item => item.includes('some') ? item : 'none';
+const resCase1 = ['some', 'something', 'none', 'none'];
 
 test('correct use of array map', t => {
 	const actual = map(fnCase1)(testArr);
