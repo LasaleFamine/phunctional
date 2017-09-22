@@ -4,7 +4,8 @@
 	"description": "&#34;Almost&#34; functional programming utils methods",
 	"license": "MIT",
 	"repository": "LasaleFamine/phunctional",
-	"main": "src",
+	"main": "src/index.js",
+	"lib": "src",
 	"bugs": {
     "url": "https://github.com/LasaleFamine/phunctional/issues",
     "email": "info@godev.space"
