@@ -4,7 +4,7 @@
 	"description": "&#34;Almost&#34; functional programming utils methods",
 	"license": "MIT",
 	"repository": "LasaleFamine/phunctional",
-	"main": "index.js",
+	"main": "src/",
 	"bugs": {
 		"url": "https://github.com/LasaleFamine/phunctional/issues",
 		"email": "info@godev.space"
@@ -21,8 +21,7 @@
 	"scripts": {
 		"release": "git pull && standard-version",
 		"test": "xo && nyc ava",
-		"test:travis": "yarn test && nyc report --reporter=text-lcov > coverage.lcov && codecov",
-		"postinstall": "node scripts/mv"
+		"test:travis": "yarn test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
 	},
 	"keywords": [
 		""
@@ -31,7 +30,6 @@
 	"devDependencies": {
 		"ava": "0.20.0",
 		"codecov": "2.2.0",
-		"mv": "2.1.1",
 		"nyc": "11.0.0",
 		"standard-version": "4.2.0",
 		"xo": "0.18.2"
