@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.org/LasaleFamine/phunctional.svg?branch=master)](https://travis-ci.org/LasaleFamine/phunctional) [![codecov](https://codecov.io/gh/LasaleFamine/phunctional/badge.svg?branch=master)](https://codecov.io/gh/LasaleFamine/phunctional?branch=master) [![punctional](https://img.shields.io/badge/phunctional--orange.svg?style=flat-square)](https://github.com/LasaleFamine/phunctional)
 
-> &#34;Almost&#34; functional programming utils methods
+> &#34;Almost&#34; functional programming (typed for TypeScript) utils methods
 
 ## Why
 
@@ -18,6 +18,8 @@ $ yarn add phunctional
 ```
 
 ## Usage
+
+The library can be used both with normal JavaScript and TypeScript.
 
 ```js
 const {switchcase} = require('phunctional');
