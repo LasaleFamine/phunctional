@@ -3,6 +3,7 @@
     <img style="max-width: 400px;" src="https://github.com/LasaleFamine/phunctional/blob/master/phunctional.png?raw=true" alt="phunctional"/>
 </h1>
 
+[![npm](https://img.shields.io/npm/v/phunctional.svg?style=flat-square)](https://github.com/LasaleFamine/phunctional)
 [![Build Status](https://travis-ci.org/LasaleFamine/phunctional.svg?branch=master)](https://travis-ci.org/LasaleFamine/phunctional) [![codecov](https://codecov.io/gh/LasaleFamine/phunctional/badge.svg?branch=master)](https://codecov.io/gh/LasaleFamine/phunctional?branch=master) [![punctional](https://img.shields.io/badge/phunctional--orange.svg?style=flat-square)](https://github.com/LasaleFamine/phunctional)
 
 > &#34;Almost&#34; functional programming (typed for TypeScript) utils methods
@@ -39,6 +40,8 @@ console.log(res);
 ## Methods
 ### switchcase
 
+> Simple `switch` but composable with object literals. It also can run a function.
+
 `Object -> Any -> String`
 
 <details><summary><b>expand</b></summary><p>
@@ -51,11 +54,12 @@ console.log(res);
 
 ##### return *case* | defaultCase
 
-Simple `switch` but composable with object literals. It could also run a function.
+Returns the choosen *case* or the *defaultCase*
 
 
 ### map
 
+> Classic `map` on array but without side effects.
 
 `Function -> Array`
 
@@ -68,4 +72,26 @@ Simple `switch` but composable with object literals. It could also run a functio
 
 ##### return [T] | []
 
-Classic `map` on array but without side effects. Return an empy array if the array passed is not valid.
+Returns an empy array if the array passed is not valid.
+
+### pEach
+
+> `forEach` that returns a Promise and can also handle a delay between iterations.
+
+`(Array, [Number]) -> Function -> Promise`
+
+<details><summary><b>expand</b></summary><p>
+
+- `Array`: array of items to iterate
+- `Number`: delay in milliseconds to run each iteration and wait
+
+- `Function`: function to handle the single item
+
+</p></details>
+
+##### return Promise
+
+Returns a `Promise` with an array of the results of every iteration.
+
+## License
+MIT © LasaleFamine
